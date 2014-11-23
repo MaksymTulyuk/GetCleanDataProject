@@ -9,6 +9,7 @@ How to run and test the script:
 5. The tiny data file will be in: "tidy data set.txt"
 
 The short description how the run_analysis.R works: the file has and runs five main functions: part1, part2, ..., part 5. Each function:
+
 - does one step from the project
 - get a data set from the previous step (except the function part1)
 - return the data set
