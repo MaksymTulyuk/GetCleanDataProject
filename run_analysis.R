@@ -1,4 +1,4 @@
-## Project.
+## run_analysis.R
 ## Getting and Cleaning Data Course Project
 
 readLabels <- function(name) {
@@ -33,7 +33,7 @@ joinDataInSet <- function(set = "test") {
 }
 
 part1 <- function() {
-    ## Part 1: merges the training and the test sets to create one data set
+    ## part 1: merges the training and the test sets to create one data set
     # read the sets: test and train
     testSet <- joinDataInSet("test")
     trainSet <- joinDataInSet("train")
@@ -63,7 +63,7 @@ getTwoColumnNumbers <- function(string1, string2) {
 }
 
 part2 <- function(dataSet) {
-    ## Part2: extract only the measurements on the mean and standard deviation
+    ## part2: extract only the measurements on the mean and standard deviation
     # get column numbers with Mean and Standart Deviation
     columnsWithMeanSD <- getTwoColumnNumbers("mean\\(\\)", "std\\(\\)")
     # return columns subjects, labels, Mean and Standart Deviation
@@ -71,7 +71,7 @@ part2 <- function(dataSet) {
 }
 
 part3 <- function(dataSet) {
-    ## Part 3: use descriptive activity names to name the activities
+    ## part 3: use descriptive activity names to name the activities
     # read activities file
     activity_labels <- readLabels("activity_labels")    
     # change numeric labels to character activities
